@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+		point="org.eclipse.ui.views">
+  <category
+        id="com.qualityeclipse.gef"
+        name="GEF Book">
+  </category>
+  <view
+        category="com.qualityeclipse.gef"
+        class="com.qualityeclipse.genealogy.view.GenealogyView"
+        id="com.qualityeclipse.genealogy.view"
+        name="Genealogy"
+        restorable="true">
+  </view>
+  <view
+        category="com.qualityeclipse.gef"
+        class="com.qualityeclipse.genealogy.zest.GenealogyZestView"
+        id="com.qualityeclipse.genealogy.view.zest"
+        name="Genealogy (Zest)"
+        restorable="true">
+  </view>
+  <view
+        category="com.qualityeclipse.gef"
+        class="com.qualityeclipse.genealogy.view.GenealogyViewGEF"
+        id="com.qualityeclipse.genealogy.view.gef"
+        name="Genealogy (GEF)"
+        restorable="true">
+  </view>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor 
+			class="com.qualityeclipse.genealogy.editor.GenealogyGraphEditor"
+			default="true"
+			extensions="gg"
+			id="com.qualityeclipse.genealogy.editor"
+			name="Genealogy Graph Editor"
+			contributorClass="com.qualityeclipse.genealogy.editor.GenealogyGraphEditorActionBarContributor">
+		</editor>
+	</extension>
+<!--
+
+ <extension
+       point="org.eclipse.ui.bindings">
+    <key
+          commandId="com.qualityeclipse.genealogy.command.rename"
+          contextId="com.qualityeclipse.genealogyContext"
+          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+          sequence="F2">
+    </key>
+ </extension>
+ <extension
+       point="org.eclipse.ui.commands">
+      <category
+            id="com.qualityeclipse.genealogy.command.category"
+            name="QualityEclipse Commands">
+    </category>
+    <command
+          categoryId="com.qualityeclipse.genealogy.command.category"
+          description="rename"
+          name="Rename"
+          id="com.qualityeclipse.genealogy.command.rename">
+    </command>
+ </extension>
+ 
+        <extension
+             point="org.eclipse.ui.contexts">
+          <context
+                description="Genealogy Context"
+                id="com.qualityeclipse.genealogyContext"
+                name="Genealogy Editor Context"
+                parentId="org.eclipse.ui.contexts.window">
+          </context>
+       </extension>
+        <extension
+              point="org.eclipse.ui.handlers">
+           <handler
+                 class="com.qualityeclipse.genealogy.handlers.RenameHandler"
+                 commandId="com.qualityeclipse.genealogy.command.rename">
+           </handler>
+        </extension>
+ -->
+</plugin>

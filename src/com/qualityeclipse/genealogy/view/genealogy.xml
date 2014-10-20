@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genealogy>
+  <person id="0" x="10" y="11" width="100" height="100" name="Andy" gender="MALE" birthYear="1922" deathYear="2002">
+    <note x="13" y="47" width="94" height="33">Andy was a
+good man.</note>
+  </person>
+  <person id="1" x="230" y="11" width="100" height="100" name="Betty" gender="FEMALE" birthYear="1924" deathYear="2006">
+    <note x="233" y="47" width="94" height="33">Betty was a
+good woman.</note>
+  </person>
+  <person id="2" x="6" y="185" width="100" height="100" name="Carl" gender="MALE" birthYear="1947" deathYear="-1">
+    <note x="9" y="221" width="94" height="30">Carl is a
+good man</note>
+    <note x="9" y="252" width="94" height="30">He lives in
+Boston, MA</note>
+  </person>
+  <person id="3" x="119" y="185" width="100" height="100" name="David" gender="MALE" birthYear="1949" deathYear="-1">
+    <note x="122" y="221" width="94" height="18">Texas is home</note>
+  </person>
+  <person id="4" x="233" y="186" width="100" height="100" name="Edward" gender="MALE" birthYear="1951" deathYear="-1">
+    <note x="236" y="222" width="94" height="18">Surfer dude!</note>
+  </person>
+  <person id="5" x="461" y="186" width="100" height="100" name="Francesca" gender="FEMALE" birthYear="1954" deathYear="-1">
+    <note x="464" y="222" width="94" height="18">Free spirit</note>
+  </person>
+  <person id="6" x="347" y="312" width="100" height="100" name="Gretchen" gender="FEMALE" birthYear="1976" deathYear="-1">
+    <note x="350" y="348" width="94" height="18">A pearl</note>
+  </person>
+  <marriage x="145" y="35" width="51" height="51" yearMarried="1942" husbandId="0" wifeId="1">
+    <offspring childId="4"/>
+    <offspring childId="2"/>
+    <offspring childId="3"/>
+  </marriage>
+  <marriage x="371" y="210" width="51" height="51" yearMarried="1972" husbandId="4" wifeId="5">
+    <offspring childId="6"/>
+  </marriage>
+  <note x="391" y="85" width="100" height="20">Smith Family</note>
+</genealogy>
